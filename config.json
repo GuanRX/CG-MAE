@@ -1,0 +1,51 @@
+{
+    "Trento": {
+        "mm_data_path": [
+            "./Trento/Trento.mat",
+            "./Trento/Trento_lidar.mat"
+        ],
+        "gt_path": "./Trento/Trento_gt.mat",
+        "rgb": [30, 13, 1],
+
+        "n_pc": 8,
+        "patch_size": 9,
+        "n_neighbors": 40,
+        "n_superpixels": 8250,
+        "rate": 0.8,
+        "refine_k": 10,
+        "init_rate": 0.5,
+
+        "alpha_recon": 1,
+        "alpha_consist": 1,
+        "alpha_contrast": 1,
+        "beta_str": 1,
+        "beta_edge_recon": 0.01,
+        "beta_kl": 1
+    },
+
+    "seed": 4,
+    "seeds": [4],
+    "dataset_name": "Trento",
+    "gpu_id": "0",
+    "lr": 0.001,
+    "n_epoches": 30,
+    "pretrain": false,
+    "remove_bkg": true,
+
+    "gae_n_enc_1": 128,
+    "gae_n_enc_2": 256,
+    "gae_n_enc_3": 512,
+    "gae_n_dec_1": 512,
+    "gae_n_dec_2": 256,
+    "gae_n_dec_3": 128,
+    "node_mask_rate": 0.5,
+    "num_choose_pixel": 20,
+    "if_draw": false,
+    "if_mask": true,
+
+    "save_model": true,
+    "cache_step": 10,
+    "log_path": "./log",
+    "save_path": "./save",
+    "result_path": "./result"
+}
